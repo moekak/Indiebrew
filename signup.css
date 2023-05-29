@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+:root {
+  --purple: #6633ff;
+  --gray: rgba(0, 0, 0, 0.548);
+  --light-white: rgba(255, 255, 255, 0.815);
+  --bold400: 400;
+  --bold700: 700;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+}
+.bg {
+  background-color: hsla(13, 83%, 96%, 1);
+  background-image: radial-gradient(
+      at 2% 18%,
+      hsla(351, 43%, 76%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 73% 71%, hsla(353, 100%, 99%, 1) 0px, transparent 50%),
+    radial-gradient(at 5% 56%, hsla(210, 75%, 87%, 1) 0px, transparent 50%);
+}
+nav{
+      padding: 5% 10%;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+}
+.arrow{
+      background-color: white;
+      padding: 1.5% 1.8%;
+      text-align: center;
+      display: flex;
+      border-radius: 5px;
+      border: 1px solid var(--gray);
+
+}
+.nav-right{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: flex-end;
+      width: 70%;
+      gap: 2%;
+}
+i{
+  color: black;
+  padding-top: 5px;
+
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 10%;
+  gap: 8%;
+}
+.text-container{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 5%;
+}
+span{
+  font-weight: var(--bold700);
+}
+.main-right{
+  background-color: white;
+  padding: 6%;
+  border-radius: 20px;
+}
+.purple {
+  color: var(--purple);
+  font-weight: var(--bold700);
+}
+.focus{
+  font-weight: var(--bold700);
+  font-size: 2.5vw;
+}
+@media all and (max-width: 1200px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-right{
+    margin-top: 5%;
+  }
+  p{
+    font-size: 2.5vw;
+  }
+  .nav-right{
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+}
